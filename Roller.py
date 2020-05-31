@@ -29,3 +29,23 @@ class Roller:
     adv1 = self.advantage()
     adv2 = self.advantage()
     return min(adv1,adv2)
+
+  def advdisadv(self):
+    disadv1 = self.disadv()
+    disadv2 = self.disadv()
+    return max(disadv1,disadv2)
+
+  def disdisadv(self):
+    disadv1 = self.disadv()
+    disadv2 = self.disadv()
+    return min(disadv1,disadv2)
+
+  def advadvdis(self):
+    advdis1 = self.advdis()
+    advdis2 = self.advdis()
+    return max(advdis1,advdis2)
+
+  def disadvdis(self):
+    advdis1 = self.advdis()
+    advdis2 = self.advdis()
+    return min(advdis1,advdis2)
